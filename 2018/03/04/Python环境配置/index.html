@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -87,13 +87,58 @@
 
 
 
+<meta name="description" content="要开发,就需要进行环境配置.很多系统都内置了Python环境.但是系统的环境有些时候并不能瞒住我们的开发需求.比如py2和py3的切换,和同版本的切换.
+
+下面我我介绍的是Anacoda3,当备注了.
+开始配置
+下载地址==&amp;gt; 官网下载
+
+
+执行运行安装
+
+
+配置环境变量
+
+
+windows ==&amp;gt;
+ 1此电脑-&amp;gt;右键选择属性-&amp;gt;高级系统设置-&amp;gt;环境变量-&amp;gt;系">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python环境配置">
 <meta property="og:url" content="http://xieyang.online/2018/03/04/Python环境配置/index.html">
 <meta property="og:site_name" content="谢杨学君">
-<meta property="og:updated_time" content="2018-03-03T16:00:01.000Z">
+<meta property="og:description" content="要开发,就需要进行环境配置.很多系统都内置了Python环境.但是系统的环境有些时候并不能瞒住我们的开发需求.比如py2和py3的切换,和同版本的切换.
+
+下面我我介绍的是Anacoda3,当备注了.
+开始配置
+下载地址==&amp;gt; 官网下载
+
+
+执行运行安装
+
+
+配置环境变量
+
+
+windows ==&amp;gt;
+ 1此电脑-&amp;gt;右键选择属性-&amp;gt;高级系统设置-&amp;gt;环境变量-&amp;gt;系">
+<meta property="og:updated_time" content="2018-03-03T16:08:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python环境配置">
+<meta name="twitter:description" content="要开发,就需要进行环境配置.很多系统都内置了Python环境.但是系统的环境有些时候并不能瞒住我们的开发需求.比如py2和py3的切换,和同版本的切换.
+
+下面我我介绍的是Anacoda3,当备注了.
+开始配置
+下载地址==&amp;gt; 官网下载
+
+
+执行运行安装
+
+
+配置环境变量
+
+
+windows ==&amp;gt;
+ 1此电脑-&amp;gt;右键选择属性-&amp;gt;高级系统设置-&amp;gt;环境变量-&amp;gt;系">
 
 
 
@@ -282,7 +327,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-04T00:00:01+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-04T00:05:07+08:00">
                 2018-03-04
               </time>
             
@@ -318,7 +363,40 @@
       
 
       
-        
+        <blockquote>
+<p>要开发,就需要进行环境配置.很多系统都内置了Python环境.但是系统的环境有些时候并不能瞒住我们的开发需求.比如py2和py3的切换,和同版本的切换.</p>
+</blockquote>
+<p>下面我我介绍的是Anacoda3,当备注了.</p>
+<h2 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h2><ol>
+<li>下载地址==&gt; <a href="https://www.anaconda.com/download/" target="_blank" rel="external">官网下载</a></li>
+</ol>
+<ol>
+<li>执行运行安装</li>
+</ol>
+<ol>
+<li>配置环境变量</li>
+</ol>
+<ul>
+<li><p>windows ==&gt;</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">此电脑-&gt;右键选择属性-&gt;高级系统设置-&gt;环境变量-&gt;系统变量-&gt;path</div></pre></td></tr></table></figure>
+</li>
+<li><p>Max/Linux ==&gt;</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#Anaconda Python</div><div class="line"></div><div class="line"> export CONDA_HOME=/usr/local/anaconda3</div><div class="line"></div><div class="line"> export PATH=$CONDA_HOME/bin:$PATH</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol>
+<li>打开终端,输入命令 ‘conda’,如果有显示则配置成功.</li>
+</ol>
+<h2 id="简单介绍一下"><a href="#简单介绍一下" class="headerlink" title="简单介绍一下"></a>简单介绍一下</h2><p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda install opencv //</div></pre></td></tr></table></figure>
+<p>重要是的切换版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//创建版本python3</div><div class="line">conda create -n py3 python=3</div><div class="line">conda create -n py2 python=2</div><div class="line">//切换版本</div><div class="line">source activate py3	//此时的环境就是python3了</div></pre></td></tr></table></figure>
+<p>查看安装的库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">conda list</div></pre></td></tr></table></figure>
+<p>信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">$ conda info</div><div class="line">//如下</div><div class="line"></div><div class="line">platform : osx-64</div><div class="line"></div><div class="line">          conda version : 4.3.30</div><div class="line"></div><div class="line">       conda is private : False</div><div class="line"></div><div class="line">      conda-env version : 4.3.30</div><div class="line"></div><div class="line">    conda-build version : not installed</div><div class="line"></div><div class="line">         python version : 3.6.1.final.0</div><div class="line"></div><div class="line">       requests version : 2.14.2</div><div class="line"></div><div class="line">       root environment : /usr/local/anaconda3  (writable)</div><div class="line"></div><div class="line">    default environment : /usr/local/anaconda3</div><div class="line"></div><div class="line">       envs directories : /usr/local/anaconda3/envs</div><div class="line"></div><div class="line">                          /Users/silen/.conda/envs</div><div class="line"></div><div class="line">          package cache : /usr/local/anaconda3/pkgs</div><div class="line"></div><div class="line">                          /Users/silen/.conda/pkgs</div><div class="line"></div><div class="line">           channel URLs : https://conda.anaconda.org/mine/osx-64</div><div class="line"></div><div class="line">                          https://conda.anaconda.org/mine/noarch</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/main/osx-64</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/main/noarch</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/free/osx-64</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/free/noarch</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/r/osx-64</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/r/noarch</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/pro/osx-64</div><div class="line"></div><div class="line">                          https://repo.continuum.io/pkgs/pro/noarch</div><div class="line"></div><div class="line">            config file : /Users/silen/.condarc</div><div class="line"></div><div class="line">             netrc file : None</div><div class="line"></div><div class="line">           offline mode : False</div><div class="line"></div><div class="line">             user-agent : conda/4.3.30 requests/2.14.2 CPython/3.6.1 Darwin/16.7.0 OSX/10.12.6</div><div class="line"></div><div class="line">                UID:GID : 501:20</div></pre></td></tr></table></figure>
+<p>还有就是一些常规的帮助,更新,卸载,清理.</p>
+
       
     </div>
 
@@ -338,6 +416,12 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
       
 
       
@@ -403,8 +487,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -432,7 +525,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -457,6 +550,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开始配置"><span class="nav-number">1.</span> <span class="nav-text">开始配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单介绍一下"><span class="nav-number">2.</span> <span class="nav-text">简单介绍一下</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
